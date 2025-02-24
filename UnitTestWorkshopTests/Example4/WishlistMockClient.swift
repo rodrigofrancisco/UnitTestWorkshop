@@ -9,19 +9,14 @@ import Foundation
 @testable import UnitTestWorkshop
 
 struct WishlistMockClient: HTTPClient {
+    private let fake: [WishlistListLibraryItem]
+    
+    init(fake: [WishlistListLibraryItem]) {
+        self.fake = fake
+    }
+    
     func get(endpoint: String, completion: (Result<Data, any Error>) -> Void) {
-        let lists = [
-            WishlistListLibraryItem(wishlistId: "l1", content: [
-                .init(id: "w1", productId: "p1"),
-                .init(id: "w2", productId: "p2")
-            ]),
-            WishlistListLibraryItem(wishlistId: "l2", content: [
-                .init(id: "w3", productId: "p5"),
-                .init(id: "w4", productId: "p6")
-            ])
-        ]
-        
-        if let data = try? JSONEncoder().encode(lists) {
+        if let data = try? JSONEncoder().encode(fake) {
             completion(.success(data))
         } else {
             completion(.failure(NSError(domain: "Parsing error", code: 1)))
