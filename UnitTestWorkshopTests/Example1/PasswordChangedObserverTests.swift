@@ -6,7 +6,15 @@
 //
 
 import XCTest
+@testable import UnitTestWorkshop
 
 final class PasswordChangedObserverTests: XCTestCase {
-    func testExample() throws {}
+    func test_shouldChangePassword_withSameDates_shouldFail() {
+        // Given
+        let sut = PasswordChangedObserver()
+        // When
+        let result = sut.shouldChangePassword(lastUpatedLocalDate: "", lastUpatedRemoteDate: "")
+        // Then
+        XCTAssertFalse(result)
+    }
 }
