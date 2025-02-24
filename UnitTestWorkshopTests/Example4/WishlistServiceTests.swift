@@ -56,7 +56,7 @@ struct WishlistMockClient: HTTPClient {
     
 }
 
-final class WishlistServiceTests: XCTest {
+final class WishlistServiceTests: XCTestCase {
     func test_getLists_successOnRightParams() {
         let sut = WishlistService(client: WishlistMockClient())
         
