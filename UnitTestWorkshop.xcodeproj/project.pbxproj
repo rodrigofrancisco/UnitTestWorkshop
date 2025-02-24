@@ -45,7 +45,6 @@
 		6D46DC612D42F47F007D2B42 /* UnitTestWorkshop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnitTestWorkshop.entitlements; sourceTree = "<group>"; };
 		6D46DC662D42F480007D2B42 /* UnitTestWorkshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestWorkshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D46DC6A2D42F480007D2B42 /* PasswordChangedObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangedObserverTests.swift; sourceTree = "<group>"; };
-		6D46DC832D42F4B9007D2B42 /* UnitTestWorkshop.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTestWorkshop.xctestplan; sourceTree = "<group>"; };
 		6D46DC872D42F53B007D2B42 /* PasswordChangedObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangedObserver.swift; sourceTree = "<group>"; };
 		6D46DC8D2D42F7C6007D2B42 /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
 		6D46DC902D42F8EF007D2B42 /* OnboardingManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManagerTests.swift; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		6D46DC982D43017C007D2B42 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		6D46DC9B2D430255007D2B42 /* OrderServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderServiceTests.swift; sourceTree = "<group>"; };
 		6D46DC9D2D43045F007D2B42 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		6DB0CF052D6CBFFD00CB5826 /* UnitTestWorkshopTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTestWorkshopTests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 		6D46DC4C2D42F47C007D2B42 = {
 			isa = PBXGroup;
 			children = (
-				6D46DC832D42F4B9007D2B42 /* UnitTestWorkshop.xctestplan */,
+				6DB0CF052D6CBFFD00CB5826 /* UnitTestWorkshopTests.xctestplan */,
 				6D46DC572D42F47C007D2B42 /* UnitTestWorkshop */,
 				6D46DC692D42F480007D2B42 /* UnitTestWorkshopTests */,
 				6D46DC562D42F47C007D2B42 /* Products */,

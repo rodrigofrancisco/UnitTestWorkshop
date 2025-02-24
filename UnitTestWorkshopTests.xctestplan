@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "1AB6EF69-CF9E-44D1-AB97-F91F3B283897",
+      "id" : "F1B0DAD8-A413-4A61-90C9-E078730781EB",
       "name" : "Test Scheme Action",
       "options" : {
 
@@ -9,11 +9,7 @@
     }
   ],
   "defaultOptions" : {
-    "targetForVariableExpansion" : {
-      "containerPath" : "container:UnitTestWorkshop.xcodeproj",
-      "identifier" : "6D46DC542D42F47C007D2B42",
-      "name" : "UnitTestWorkshop"
-    }
+
   },
   "testTargets" : [
     {
