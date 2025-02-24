@@ -34,7 +34,7 @@ struct WishlistService {
             switch result {
             case .success(let data):
                 completion(.success( map(data: data)))
-            case .failure(let failure):
+            case .failure:
                 completion(.success([]))
             }
         }
@@ -61,7 +61,7 @@ struct WishlistLightWeightUseCase {
             switch result {
             case .success(let lists):
                 persist(lists)
-            case .failure(let failure):
+            case .failure:
                 print("Do nothing")
             }
         }
