@@ -60,7 +60,7 @@ final class WishlistServiceTests: XCTestCase {
     func test_getLists_successOnRightParams() {
         let sut = WishlistService(client: WishlistMockClient())
         
-        let expectation = XCTestExpectation(description: "Expecting wishlist lists")
+        let expectation = expectation(description: "Expecting wishlist lists")
         
         sut.getLists { result in
             switch result {
@@ -71,5 +71,7 @@ final class WishlistServiceTests: XCTestCase {
             }
             expectation.fulfill()
         }
+        
+        wait(for: [expectation], timeout: 1)
     }
 }
