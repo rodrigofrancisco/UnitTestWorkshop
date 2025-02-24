@@ -66,7 +66,7 @@ final class WishlistServiceTests: XCTestCase {
             switch result {
             case .success(let success):
                 XCTAssertEqual(success.count, 2)
-            case .failure(let failure):
+            case .failure:
                 XCTFail("Decoding failed")
             }
             expectation.fulfill()
