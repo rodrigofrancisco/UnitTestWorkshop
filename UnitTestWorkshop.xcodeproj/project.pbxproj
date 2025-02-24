@@ -22,6 +22,7 @@
 		6D46DC992D43017C007D2B42 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46DC982D43017C007D2B42 /* HTTPClient.swift */; };
 		6D46DC9C2D430255007D2B42 /* OrderServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46DC9B2D430255007D2B42 /* OrderServiceTests.swift */; };
 		6D46DC9E2D43045F007D2B42 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46DC9D2D43045F007D2B42 /* Models.swift */; };
+		6DB0CF072D6CC2D000CB5826 /* WishlistMockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB0CF062D6CC2CC00CB5826 /* WishlistMockClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		6D46DC9B2D430255007D2B42 /* OrderServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderServiceTests.swift; sourceTree = "<group>"; };
 		6D46DC9D2D43045F007D2B42 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		6DB0CF052D6CBFFD00CB5826 /* UnitTestWorkshopTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTestWorkshopTests.xctestplan; sourceTree = "<group>"; };
+		6DB0CF062D6CC2CC00CB5826 /* WishlistMockClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistMockClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				6D10214E2D6CACDE00339726 /* WishlistServiceTests.swift */,
+				6DB0CF062D6CC2CC00CB5826 /* WishlistMockClient.swift */,
 			);
 			path = Example4;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D10214F2D6CACDE00339726 /* WishlistServiceTests.swift in Sources */,
+				6DB0CF072D6CC2D000CB5826 /* WishlistMockClient.swift in Sources */,
 				6D46DC9C2D430255007D2B42 /* OrderServiceTests.swift in Sources */,
 				6D46DC6B2D42F480007D2B42 /* PasswordChangedObserverTests.swift in Sources */,
 				6D46DC912D42F8EF007D2B42 /* OnboardingManagerTests.swift in Sources */,
