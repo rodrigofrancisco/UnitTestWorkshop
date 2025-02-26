@@ -33,7 +33,7 @@ struct CancellationService {
         self.client = client
     }
     
-    func cancelItems(using endpoint: String, body: CanceItemsModel, completion: @Sendable @escaping (Result<CancellationResponse, Error>) -> Void) {
+    func cancelItems(using endpoint: String, body: CanceItemsModel, completion: @escaping (Result<CancellationResponse, Error>) -> Void) {
         client.post(endpoint: endpoint, body: body, headers: nil, completion: completion)
     }
 }
