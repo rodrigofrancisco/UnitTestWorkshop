@@ -195,7 +195,7 @@
 				6D46DC9D2D43045F007D2B42 /* Models.swift */,
 				6D46DC962D42FED5007D2B42 /* OrderService.swift */,
 			);
-			name = Example3;
+			path = Example3;
 			sourceTree = "<group>";
 		};
 		6D46DC9A2D43023C007D2B42 /* Example3 */ = {
