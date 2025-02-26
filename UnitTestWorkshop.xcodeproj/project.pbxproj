@@ -60,6 +60,7 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6DB26D882D6F5A200022B338 /* Example5 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Example5; sourceTree = "<group>"; };
+		6DB26D8C2D6F5F970022B338 /* Example5 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Example5; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +141,7 @@
 				6D46DC8F2D42F8D4007D2B42 /* Example2 */,
 				6D46DC9A2D43023C007D2B42 /* Example3 */,
 				6D10214D2D6BA8A800339726 /* Example4 */,
+				6DB26D8C2D6F5F970022B338 /* Example5 */,
 			);
 			path = UnitTestWorkshopTests;
 			sourceTree = "<group>";
@@ -246,6 +248,9 @@
 			);
 			dependencies = (
 				6D46DC682D42F480007D2B42 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6DB26D8C2D6F5F970022B338 /* Example5 */,
 			);
 			name = UnitTestWorkshopTests;
 			productName = UnitTestWorkshopTests;
