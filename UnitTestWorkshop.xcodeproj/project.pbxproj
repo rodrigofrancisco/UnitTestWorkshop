@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -57,6 +57,10 @@
 		6DB0CF052D6CBFFD00CB5826 /* UnitTestWorkshopTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTestWorkshopTests.xctestplan; sourceTree = "<group>"; };
 		6DB0CF062D6CC2CC00CB5826 /* WishlistMockClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistMockClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6DB26D882D6F5A200022B338 /* Example5 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Example5; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6D46DC522D42F47C007D2B42 /* Frameworks */ = {
@@ -120,6 +124,7 @@
 				6D46DC8C2D42F76D007D2B42 /* Example2 */,
 				6D46DC952D42FEA6007D2B42 /* Example3 */,
 				6D017B262D567EC800594A46 /* Example4 */,
+				6DB26D882D6F5A200022B338 /* Example5 */,
 				6D46DC5C2D42F47F007D2B42 /* Assets.xcassets */,
 				6D46DC5E2D42F47F007D2B42 /* Main.storyboard */,
 				6D46DC612D42F47F007D2B42 /* UnitTestWorkshop.entitlements */,
@@ -220,6 +225,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6DB26D882D6F5A200022B338 /* Example5 */,
 			);
 			name = UnitTestWorkshop;
 			productName = UnitTestWorkshop;
