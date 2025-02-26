@@ -5,8 +5,24 @@
 //  Created by RODRIGO FRANCISCO PABLO on 26/02/25.
 //
 
-protocol HTTPPostClient {
-    func post<T: Encodable, U: Decodable>(endpoint: String, body: T, headers: [String : Any]?, completion: @escaping (Result<U, Error>) -> Void)
+import Foundation
+
+struct HTTPPostClientImpl {
+    func post<T: Encodable, U: Decodable>(
+        endpoint: String,
+        body: T,
+        headers: [String : Any]?,
+        completion: @escaping (Result<U, Error>) -> Void) {
+        Task {
+            do {
+                let result = try await URLSession.shared.data(from: URL(string: endpoint)!)
+                let decodedResponse = try JSONDecoder().decode(U.self, from: result.0)
+                completion(.success(decodedResponse))
+            } catch {
+                completion(.failure(NSError(domain: "Generic error :( plis implement this", code: 0)))
+            }
+        }
+    }
 }
 
 struct CanceItemsModel: Encodable {
@@ -26,14 +42,12 @@ struct CancellationResponse: Decodable {
 }
 
 struct CancellationService {
-    private let client: HTTPPostClient
+    init() {}
     
-    
-    init(client: HTTPPostClient) {
-        self.client = client
-    }
-    
-    func cancelItems(using endpoint: String, body: CanceItemsModel, completion: @escaping (Result<CancellationResponse, Error>) -> Void) {
-        client.post(endpoint: endpoint, body: body, headers: nil, completion: completion)
+    func cancelItems(
+        using endpoint: String,
+        body: CanceItemsModel,
+        completion: @escaping (Result<CancellationResponse, Error>) -> Void) {
+        HTTPPostClientImpl().post(endpoint: endpoint, body: body, headers: nil, completion: completion)
     }
 }
